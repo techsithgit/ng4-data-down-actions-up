@@ -8,12 +8,13 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 export class InnerComponent implements OnInit {
   @Input() name:string;
   @Output() eventFromInner = new EventEmitter<string>();
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  // Actions
   sendToOuter(){
+    // this will be executed in Outer Component when emitted
     this.eventFromInner.emit(this.name);
   }
 

@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class MainContainerComponent implements OnInit {
   names = ['john', 'judy', 'peter'];
   name:string = '';
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+  // Actions
   eventFromOuter(passed:string){
     this.name = passed;
   }

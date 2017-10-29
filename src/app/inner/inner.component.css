@@ -1,8 +1,8 @@
-.inner{
+.inner {
   height: 150px;
   width: 150px;
   background-color: red;
-  color:white;
+  color: white;
   display: inline-block;
   text-align: center;
   line-height: 150px;

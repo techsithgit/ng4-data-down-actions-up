@@ -9,10 +9,11 @@ export class OuterComponent implements OnInit {
   name:string = '';
   @Input() names:string[];
   @Output() eventFromOuter = new EventEmitter<string>();
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
+  // Actions
   eventFromInner(passed:string){
     this.name = passed;
     this.eventFromOuter.emit(this.name);
